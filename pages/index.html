@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/weather.css">
     <script src="https://kit.fontawesome.com/b4e71a4536.js" crossorigin="anonymous"></script>
     <title>VirágbyVirág</title>
 </head>
@@ -19,19 +20,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/pages/index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/pages/index.html">Kezdőlap<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/pages/pictures.html">Képek <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/pages/pictures.html">Képek<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/pages/about.html">Rólam <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/pages/about.html">Rólam<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/pages/contact.html">Kapcsolat <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/pages/contact.html">Kapcsolat<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/pages/order.html">Rendelés <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/pages/order.html">Rendelés<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/pages/admin.html">Admin<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -40,19 +44,37 @@
             </form>
         </div>
     </nav>
+    <div id="weather-info" class="container">
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-3 col-form-label" for="day">Nap:</label>
+                        <select class="form-control" id="day" name="day">
+                            <option value="0">Hétfő</option>
+                            <option value="1">Kedd</option>
+                            <option value="2">Szerda</option>
+                            <option value="3">Csütörtök</option>
+                            <option value="4">Péntek</option>
+                            <option value="5">Szombat</option>
+                            <option value="6">Vasánap</option>
+                        </select>
+                    </div>
+                    <button onclick="weatherInfo()" type="button" class="btn btn-primary">Előrejelzés</button>
+                </form>
+            </div>
+            <div class="col-4"></div>
+            <div id="temperature" class="col-4"></div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
+            <div id="min-temp" class="col-4"></div>
+            <div id="max-temp" class="col-4"></div>
+            <div id="avg-temp" class="col-4"></div>
         </div>
-      </div>
+    </div>
+    <script src="/js/weather.js"></script>
 
 </body>
 

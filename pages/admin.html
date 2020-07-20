@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/b4e71a4536.js" crossorigin="anonymous"></script>
-    <title>Kapcsolat</title>
+    <title>Admin</title>
 </head>
 
 <body>
@@ -44,6 +44,42 @@
             </form>
         </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h3>Admin felület</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="user-id"></td>
+                            <td id="user-name"></td>
+                            <td id="user-email"></td>
+                            <td id="user-address"></td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-primary"><i
+                                            class="fas fa-pencil-alt"></i></button>
+                                    <button type="button" class="btn btn-danger"><i
+                                            class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <script src="/js/admin.js"></script>
 </body>
 
 </html>
