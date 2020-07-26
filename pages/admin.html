@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="/pages/index.html">VirágbyVirág</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,24 +46,60 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-1"></div>
+            <div class="col-10">
                 <h3>Admin felület</h3>
-                <table class="table table-striped">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-5">
+                            <input type="text" class="form-control" id="surnameInput" name="surname-input"
+                                placeholder="Vezetéknév">
+                            </input>
+                        </div>
+                        <div class="form-group col-5">
+                            <input type="text" class="form-control" id="firstnameInput" name="firstname-input"
+                                placeholder="Keresztnév">
+                            </input>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-10">
+                            <input type="email" class="form-control" id="emailInput" name="email-input"
+                                placeholder="Email">
+                            </input>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-10">
+                            <input type="text" class="form-control" id="addressInput" name="address-input"
+                                placeholder="Lakcím">
+                            </input>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <button type="button" class="btn btn-success">Mentés</button>
+                </form>
+                <table id="userTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Vezetéknév</th>
+                            <th>Keresztnév</th>
+                            <th>Email</th>
+                            <th>Lakcím</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
                 </table>
             </div>
-            <div class="col-2"></div>
+            <div class="col-1"></div>
         </div>
     </div>
     <script src="/js/admin.js"></script>
 
-
-    <!-- <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary"><i
-                class="fas fa-pencil-alt"></i></button>
-        <button type="button" class="btn btn-danger"><i
-                class="fas fa-trash-alt"></i></button>
-    </div> -->
 </body>
 
 </html>
