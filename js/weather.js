@@ -27,7 +27,7 @@ window.onload = weatherInfo();
 
 function minTemperature() {
     let min = temperatures.length != 0 ? temperatures[0] : 0;
-    for (let i = 1; i < temperatures.length; i++) {
+    for (let i = 0; i < temperatures.length; i++) {
         if (temperatures[i] < min) {
             min = temperatures[i];
         }
@@ -37,7 +37,7 @@ function minTemperature() {
 
 function maxTemperature() {
     let max = temperatures.length != 0 ? temperatures[0] : 0;
-    for (let i = 1; i < temperatures.length; i++) {
+    for (let i = 0; i < temperatures.length; i++) {
         if (temperatures[i] > max) {
             max = temperatures[i];
         }
