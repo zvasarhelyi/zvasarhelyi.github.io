@@ -6,6 +6,12 @@ var offers = ["Ma forró csokit is árusítunk",
     "Ma fagyit is kínálunk",
     "Hűsítsd le magad egy jéghideg limonádéval!"];
 
+/*
+Celsius to Fahrenheit:
+°C * 1.8 + 32
+°C * 9/5 + 32
+*/
+
 function weatherInfo() {
     const day = document.querySelector('#day').value;
     const temperatureDiv = document.querySelector('#temperature');

@@ -1,7 +1,7 @@
 let users = [
     { surname: "Vásárhelyi", firstname: "Zoltán", email: "z.vasarhelyi89@gmail.com", address: "1158 Budapest, Drégelyvár utca 35." },
     { surname: "Vásárhelyi", firstname: "Miklós", email: "miklosvasy@gmail.com", address: "1131 Budapest, Futár utca 7." },
-    { surname: "Hegyaljai", nafirstnameme: "Virág", email: "hegyaljaivirag.66@gmail.com", address: "1158 Budapest, Drégelyvár utca 35." }
+    { surname: "Hegyaljai", firstname: "Virág", email: "hegyaljaivirag.66@gmail.com", address: "1158 Budapest, Drégelyvár utca 35." }
 ];
 
 let tableBody = document.querySelector("#userTable tbody");
